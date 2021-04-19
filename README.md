@@ -39,4 +39,5 @@ is configured to automatically proxy requests to svelte server. This way we do n
 ## TODO
 
 - [x] Include .env file setup
-- [x] Get rid of build warnings
+- [] Get rid of build warnings
+    - [ ] `(!) Unresolved dependencies` when running build:sever
