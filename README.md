@@ -11,8 +11,8 @@ This is a boilerplate for svelte(-kit) and koa. It includes:
 `degit kaladivo/svelte-kit-koa-boilerplate my-new-super-cool-project`
 
 ## Structure
-`src/server` - Where the Koa server lives in
-`src/server/createServer.ts` - Creates Koa server, here you can add more routes
+`src/server` - Where the Koa server lives in  
+`src/server/createServer.ts` - Creates Koa server, here you can add more routes  
 `src/app` - SvelteKit app directory. See [official docs](https://github.com/sveltejs/kit`) to find out more.
 
 ## How to use
