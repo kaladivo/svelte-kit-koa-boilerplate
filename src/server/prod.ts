@@ -5,6 +5,7 @@ import fetch, { Response, Request, Headers } from 'node-fetch';
 import serve from 'koa-static';
 import compress from 'koa-compress';
 
+import './setupEnv'
 import createServer, { Params } from './createServer';
 
 // Render app exposed from build app

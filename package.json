@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "start:app": "svelte-kit dev",
-    "start:server": "rollup -c rollup.server.config.js -w",
+    "start:server": "rollup -r utils/setupEnv.js -c rollup.server.config.js -w",
     "start": "NODE_ENV=development concurrently --kill-others \"yarn start:server\" \"yarn start:app\"",
     "build:server": "rollup -c rollup.server.config.js",
     "build:app": "svelte-kit build",
@@ -44,6 +44,7 @@
   "type": "module",
   "dependencies": {
     "concurrently": "^6.0.2",
+    "dotenv": "^8.2.0",
     "encoding": "^0.1.13",
     "koa": "^2.13.1",
     "koa-bodyparser": "^4.3.0",

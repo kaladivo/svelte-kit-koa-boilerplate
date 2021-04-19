@@ -1,6 +1,9 @@
 <script lang="ts">
-	import Axios from 'axios'
-	let promise = Axios.get('/api')
+	import Axios from 'axios';
+	// For some reason build fails when accessing import.meta.env in .svelte file.
+	import {API_ROUTE_PREFIX} from '../utils/envVars';
+
+	let promise = Axios.get(API_ROUTE_PREFIX);
 </script>
 
 {#await promise}

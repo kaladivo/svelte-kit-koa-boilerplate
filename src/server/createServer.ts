@@ -4,6 +4,8 @@ import logger from 'koa-logger';
 import json from 'koa-json';
 import bodyParser from 'koa-bodyparser';
 
+const { VITE_API_ROUTE_PREFIX: API_ROUTE_PREFIX = '/api' } = process.env
+
 export interface Params {
 	injectMiddlewares: (koa: Koa) => undefined
 }
@@ -16,7 +18,7 @@ export default function createServer({ injectMiddlewares }: Params = { injectMid
 
 	// Router to serve api
 	const apiRouter = new Router();
-	apiRouter.prefix('/api');
+	apiRouter.prefix(API_ROUTE_PREFIX);
 
 	apiRouter.use(json());
 	apiRouter.use(bodyParser());
