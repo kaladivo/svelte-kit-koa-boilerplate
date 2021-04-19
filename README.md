@@ -38,4 +38,5 @@ is configured to automatically proxy requests to svelte server. This way we do n
 
 ## TODO
 
-- [ ] Include .env file setup
+- [x] Include .env file setup
+- [x] Get rid of build warnings
