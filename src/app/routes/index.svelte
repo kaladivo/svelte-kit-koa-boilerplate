@@ -1,12 +1,7 @@
 <script>
 	import axios from 'axios';
-	import { onMount } from 'svelte';
 
-	let promise = Promise.resolve({})
-
-	onMount(async () => {
-		promise = axios.get('/api');
-	});
+	let promise = axios.get('/api');
 </script>
 
 <h1>Welcome to SvelteKit</h1>
