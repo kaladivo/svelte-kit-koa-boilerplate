@@ -1,24 +1,27 @@
 <script>
-	import axios from 'axios';
+	import ApiCall from '../components/ApiCall.svelte';
 
-	let promise = axios.get('/api');
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>I work werry good</p>
-<br>
-
-{#await promise}
-	<p>Loading...</p>
-{:then response}
-	<p>data: {JSON.stringify(response.data)}</p>
-{:catch error}
-	<p class='error'>{error.message}</p>
-{/await}
-
 <style>
-	.error {
-			color: darkred;
-	}
+    .content {
+			padding: 0 1rem;
+    }
+
+    .box {
+        max-width: 600px;
+        margin: 1rem auto;
+    }
 </style>
+
+<div class='content'>
+	<div class='box'>
+		<h1>Welcome to SvelteKit</h1>
+		<hr>
+		<p>This is simple boilerplate to use for quickly setting up Svelte Kit + Koa app.</p>
+	</div>
+	<div class='box'>
+	<ApiCall />
+	</div>
+</div>
 <!--wtf-->

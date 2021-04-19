@@ -1,2 +1,5 @@
-aha
-<slot />
+<script>
+	import 'bulma/css/bulma.css'
+</script>
+
+<slot/>
