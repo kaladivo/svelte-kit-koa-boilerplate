@@ -39,5 +39,6 @@ is configured to automatically proxy requests to svelte server. This way we do n
 ## TODO
 
 - [x] Include .env file setup
-- [] Get rid of build warnings
+- [ ] Get rid warnings / errors
     - [ ] `(!) Unresolved dependencies` when running build:sever
+    - [ ] ` Error: connect ECONNREFUSED 127.0.0.1:80` - when requesting page 

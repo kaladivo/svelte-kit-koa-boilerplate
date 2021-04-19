@@ -2,6 +2,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';
 import typescript from '@rollup/plugin-typescript';
 import run from  '@rollup/plugin-run'
+import autoExternal from 'rollup-plugin-auto-external'
 
 const dev = process.env.ROLLUP_WATCH;
 
@@ -19,7 +20,8 @@ export default {
 		typescript(),
 		commonjs(),
 		json(),
-		// autoExternal(),
+		// TODO this is weird but it was the only way how to make this work
+		dev && autoExternal(),
 		dev && run()
 	],
 	// eslint-disable-next-line @typescript-eslint/no-var-requires
