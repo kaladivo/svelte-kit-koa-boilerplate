@@ -3,8 +3,7 @@ import Router from 'koa-router';
 import logger from 'koa-logger';
 import json from 'koa-json';
 import bodyParser from 'koa-bodyparser';
-
-const { VITE_API_ROUTE_PREFIX: API_ROUTE_PREFIX = '/api' } = process.env
+import API_ROUTE_PREFIX from '../shared/apiRoutePrefix';
 
 export interface Params {
 	injectMiddlewares: (koa: Koa) => undefined

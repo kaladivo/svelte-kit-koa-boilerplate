@@ -1,8 +1,9 @@
 import proxy from 'koa-proxies';
 import './setupEnv';
 import createServer, { Params } from './createServer';
+import API_ROUTE_PREFIX from '../shared/apiRoutePrefix';
 
-const { SERVER_PORT = 3001, VITE_API_ROUTE_PREFIX: API_ROUTE_PREFIX = '/api' } = process.env;
+const { SERVER_PORT = 3001 } = process.env;
 
 
 createServer(<Params>{
