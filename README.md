@@ -9,7 +9,7 @@ This is a boilerplate for svelte(-kit) and koa. It includes:
 
 ## Download with Degit
 
-`degit kaladivo/svelte-kit-koa-boilerplate my-new-super-cool-project`
+`npx degit kaladivo/svelte-kit-koa-boilerplate my-new-super-cool-project`
 
 ## Structure
 
